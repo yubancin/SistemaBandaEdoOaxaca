@@ -1,0 +1,69 @@
+﻿
+
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+       
+
+  
+        $("#txtSearch").keyup(function () {
+            var x = $("#txtSearch").val();
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Search", "Consulta")',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ "Location": x }),
+                dataType: "json",
+                success: function (data) {
+                    var table = "<table class='table table-striped'><tr><td>Folio</td><td>Titulo</td><td>Autor</td><td>Año</td><td>Estado</td><td>Partichelas</td><td>Region</td></tr>";
+                    $.each(data, function (Index, value) {
+                        table += "<tr><td>" + value.folio + "</td><td>" + value.tituloObra + "</td><td>" + value.autor + "</td><td>" + value.anio + "</td><td>" + value.estado + "</td><td>" + value.numPartichelas + "</td><td>"+value.region+"</td></tr>";
+                    });
+                    table += "</table>";
+                    $("#myData").html(table);
+                }
+            });
+        });
+    });
+</script>
+<div class="containter">
+    <div class="center">
+        <h1> Busqueda de Obra Musical por Titulo</h1>
+        <table>
+            <tbody>
+                <tr>
+
+                    <td valign="top">
+                        @Html.TextBox("txtSearch", null, new { @placeholder = "Obra Musical" })
+
+                        <div id="myData">
+                            @*@foreach (var item in Model)
+                            {
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>@item.tituloObra</td>
+                                            <td>@item.autor</td>
+                                            <td>@item.folio</td>
+                                            <td>@item.disponibilidad</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>}*@
+                        </div>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+    
+
+
+</div>

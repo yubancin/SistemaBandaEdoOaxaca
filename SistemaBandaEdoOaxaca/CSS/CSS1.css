@@ -1,0 +1,13 @@
+.slider{
+width:800px;
+height:350px;
+
+margin:30px auto;
+background-image: url(img/loading.gif);
+background-repeat:no-repeat;
+background-;}
+
+.slider img {
+width: 800px;
+height: 350px;
+display:none;}

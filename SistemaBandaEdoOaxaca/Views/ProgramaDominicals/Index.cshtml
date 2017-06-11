@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.ProgramaDominical>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>P R O G R A M A - M U S I C A L</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lugar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ObraMusical.tituloObra)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lugar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObraMusical.tituloObra)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idProgramaDominical }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.idProgramaDominical }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.idProgramaDominical })
+        </td>
+    </tr>
+}
+
+</table>

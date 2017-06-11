@@ -1,0 +1,99 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.Musico>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LISTA DE MUSICOS</h2>
+
+<p>
+    @Html.ActionLink("Crear Musico", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoPaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoMaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numEmpleado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nivel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nss)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gradoEstudios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.correo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cuenta.usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion.calle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Instrumentos.nombreInstrumento)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoPaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoMaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nivel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nss)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gradoEstudios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.correo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cuenta.usuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion.calle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Instrumentos.nombreInstrumento)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idMusico }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.idMusico }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.idMusico })
+        </td>
+    </tr>
+}
+
+</table>

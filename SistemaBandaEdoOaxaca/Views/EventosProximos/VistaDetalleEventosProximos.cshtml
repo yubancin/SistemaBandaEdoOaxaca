@@ -1,0 +1,70 @@
+﻿
+@model SistemaBandaEdoOaxaca.DetalleEventos
+@{
+    ViewBag.Title = "VistaDetalleEventosProximos";
+}
+
+
+
+
+<h2>Eventos</h2>
+<a>  @Html.ActionLink("Crear Nuevo", "Create") </a>
+<table class="table table-bordered table - striped">
+    <thread>
+        <tr>
+            <th>ID EVENTO</th>
+            <th>FECHA</th>
+            <th>VER</th>
+            <th>MODIFICAR</th>
+            <th>BORRAR</th>
+    </thread>
+
+
+    <tbody>
+        @foreach (var item in Model.eventos)
+        {
+            <tr>
+                <td>@item.idEvento</td>
+                <td>@item.fecha</td>
+                <td>@Html.ActionLink("Detalles", "VistaDetalleEventosProximos", new { id = item.idEvento })</td>
+                <td>@Html.ActionLink("Editar", "Edit", new { id = item.idEvento }) </td>      
+                <td>@Html.ActionLink("Borrar", "Delete", new { id = item.idEvento })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<center>
+    <section>
+        @if (Model.seleccionEventoId != null)
+        {
+
+            <fieldset>
+
+                <legend><h2>Detalle de Eventos</h2></legend>
+                <div class="display-label">
+                   <b> ID:</b> @Html.DisplayFor(Model => Model.seleccionadoEvento.idEvento)
+                </div>
+                <div class="display-label">
+                    <b> SERÁ EL DÍA:</b> @Html.DisplayFor(Model => Model.seleccionadoEvento.fecha)
+                </div>
+                <div class="display-label">
+                    <b> EMPIEZA:</b> @Html.DisplayFor(Model => Model.seleccionadoEvento.horaEmpiezo)
+                </div>
+                <div class="display-label">
+                    <b> TERMINA:</b> @Html.DisplayFor(Model => Model.seleccionadoEvento.horaSalida)
+                </div>
+                <div class="display-label">
+                    <b> SERÁ EN:</b> @Html.DisplayFor(Model => Model.seleccionadoEvento.lugar)
+                </div>
+                <div class="display-label">
+                    <b> INDICACIÓN:</b> @Html.DisplayFor(Model => Model.seleccionadoEvento.Orden)
+                </div>
+
+            </fieldset>
+
+
+        }
+    </section>
+</center>
+

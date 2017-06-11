@@ -1,0 +1,34 @@
+﻿@model List<SistemaBandaEdoOaxaca.Genero>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Generos</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id Genero</th>
+            <th>genero</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.idGenero</td>
+                <td>@item.genero1</td>
+            
+                <td>@Ajax.ActionLink("Ver", "detalle", "ObrasPorGenero", new { id = item.idGenero }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "detalle" })</td>
+                @*@Ajax.ActionLink()*@
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    Detalle De Obras por Genero
+</p>
+<div id="detalle">
+
+</div>

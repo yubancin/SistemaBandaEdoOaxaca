@@ -1,0 +1,213 @@
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\csc.exe
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Collections.Immutable.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\vbc.exe
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\VBCSCompiler.exe
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\VBCSCompiler.exe.config
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\SistemaBandaEdoOaxaca.dll.config
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\SistemaBandaEdoOaxaca.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\SistemaBandaEdoOaxaca.pdb
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Antlr3.Runtime.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.SqlServer.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Google.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Web.Infrastructure.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Newtonsoft.Json.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Owin.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Helpers.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Mvc.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Optimization.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Razor.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Deployment.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Razor.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\WebGrease.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Helpers.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Mvc.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Optimization.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Razor.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Deployment.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Razor.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Antlr3.Runtime.pdb
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Newtonsoft.Json.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.SqlServer.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Google.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\obj\Debug\SistemaBandaEdoOaxaca.dll
+c:\users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\obj\Debug\SistemaBandaEdoOaxaca.pdb
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.dll
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Core.dll
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.dll
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.PlatformServices.dll
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.YouTube.v3.dll
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Zlib.Portable.dll
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.pdb
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.xml
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.pdb
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.xml
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.PlatformServices.pdb
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.PlatformServices.xml
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Core.pdb
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Core.xml
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.PlatformServices.pdb
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.PlatformServices.xml
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.YouTube.v3.pdb
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.YouTube.v3.xml
+C:\Users\habbo\documents\visual studio 2015\Projects\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Zlib.Portable.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\csc.exe
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Collections.Immutable.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Reflection.Metadata.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\vbc.exe
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\VBCSCompiler.exe
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\VBCSCompiler.exe.config
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\SistemaBandaEdoOaxaca.dll.config
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\SistemaBandaEdoOaxaca.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\SistemaBandaEdoOaxaca.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Antlr3.Runtime.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.SqlServer.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.PlatformServices.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Core.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.PlatformServices.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.YouTube.v3.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Core.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Cookies.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Facebook.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Google.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.OAuth.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Twitter.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Web.Infrastructure.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Newtonsoft.Json.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Owin.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Helpers.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Mvc.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Optimization.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Razor.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Deployment.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Razor.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\WebGrease.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Zlib.Portable.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.PlatformServices.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Auth.PlatformServices.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Core.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.Core.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.PlatformServices.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.PlatformServices.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.YouTube.v3.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Google.Apis.YouTube.v3.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Newtonsoft.Json.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Helpers.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Mvc.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Optimization.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.Razor.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Deployment.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\System.Web.WebPages.Razor.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Antlr3.Runtime.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Zlib.Portable.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\EntityFramework.SqlServer.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Core.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Facebook.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Cookies.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.OAuth.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Google.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.Twitter.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\obj\Debug\SistemaBandaEdoOaxaca.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\obj\Debug\SistemaBandaEdoOaxaca.pdb
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\csc.exe.config
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\csc.rsp
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\csi.exe
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\csi.exe.config
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\csi.rsp
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.AppContext.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Console.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Diagnostics.Process.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.IO.Compression.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.IO.FileSystem.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.IO.Pipes.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Security.AccessControl.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Security.Claims.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Security.Principal.Windows.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Threading.Thread.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.ValueTuple.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Xml.XmlDocument.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Xml.XPath.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\vbc.exe.config
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\bin\roslyn\vbc.rsp
+C:\SistemaBandaEdoOaxaca\SistemaBandaEdoOaxaca\obj\Debug\SistemaBandaEdoOaxaca.csprojResolveAssemblyReference.cache

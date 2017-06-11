@@ -1,0 +1,57 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.DonacionInterna>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LISTA DE DONACION INTERNA</h2>
+
+<p>
+    @Html.ActionLink("Crear Donacion Interna", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.isReciproco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.objeto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ObraMusical.tituloObra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estados.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Musico.idCuenta)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.isReciproco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.objeto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObraMusical.tituloObra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estados.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Musico.idCuenta)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idDonacionInterna }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.idDonacionInterna }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.idDonacionInterna })
+        </td>
+    </tr>
+}
+
+</table>

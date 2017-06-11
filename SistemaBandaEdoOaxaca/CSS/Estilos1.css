@@ -1,0 +1,58 @@
+
+
+#LogoUno{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+  }
+
+#logoDos {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#fuente{
+ font-family:Music for empty apartments,Fortunate DEMO;
+}
+
+#Letrero{
+    font-family:Music for empty apartments,Fortunate DEMO;
+    font-size:40px;
+}
+#Banner{
+     font-family:Lassus;
+    font-size:80px;
+}
+#ini{
+     font-family:KR Music Class;
+    font-size:40px;
+}
+
+.slider{
+width:800px;
+height:500px;
+margin:10px auto;
+background-repeat:no-repeat;
+background-;
+
+}
+
+.slider img {
+    width: 800px;
+    height: 500px;
+    display: none;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+     font-size: 14px;
+
+
+}

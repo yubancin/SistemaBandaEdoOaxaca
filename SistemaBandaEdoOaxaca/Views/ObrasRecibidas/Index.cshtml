@@ -1,0 +1,78 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.ObrasRecibidas>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Obras Recibidas</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Donante.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Donante.apellidoPaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Donante.apellidoMaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ObraMusical.tituloObra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ObraMusical.Genero.genero1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ObraMusical.fechaIngreso)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Donante.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Donante.apellidoPaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Donante.apellidoMaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Donante.procedencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Donante.correoElectronico)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Donante.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObraMusical.tituloObra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObraMusical.autor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObraMusical.Genero.genero1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObraMusical.numPartichelas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObraMusical.fechaIngreso)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idObraRecibida }) 
+            @Html.ActionLink("Detalles", "Details", new { id=item.idObraRecibida }) 
+            @Html.ActionLink("Borrar", "Delete", new { id=item.idObraRecibida })
+        </td>
+    </tr>
+}
+
+</table>

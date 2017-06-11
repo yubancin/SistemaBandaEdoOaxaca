@@ -1,0 +1,58 @@
+﻿@model SistemaBandaEdoOaxaca.DonacionInterna
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Donacion Interna</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.isReciproco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isReciproco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.objeto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.objeto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObraMusical.tituloObra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObraMusical.tituloObra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estados.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estados.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Musico.idCuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Musico.idCuenta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idDonacionInterna }) |
+    @Html.ActionLink("Regresar a la Lista", "Index")
+</p>

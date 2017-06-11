@@ -1,0 +1,120 @@
+﻿@model SistemaBandaEdoOaxaca.Musico
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Borrar</h2>
+
+<h3>Estas Seguro de querer borrar este registro?</h3>
+<div>
+    <h4>Musico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoPaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoPaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoMaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoMaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nivel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nss)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nss)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gradoEstudios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gradoEstudios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cuenta.usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cuenta.usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion.calle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion.calle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instrumentos.nombreInstrumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instrumentos.nombreInstrumento)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar a la Lista", "Index")
+        </div>
+    }
+</div>

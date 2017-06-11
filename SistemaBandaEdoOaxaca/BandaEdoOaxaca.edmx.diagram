@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f715edd2f2d245bc98f17c3d1e5d3e52" Name="Diagram1">
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Cuenta" Width="1.5" PointX="3.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Direccion" Width="1.5" PointX="3.75" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.DonacionExterna" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.DonacionInterna" Width="1.5" PointX="8.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Donante" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Estados" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.EventosProximos" Width="1.5" PointX="7.25" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Genero" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Instrumentos" Width="1.5" PointX="3.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Musico" Width="1.5" PointX="6" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.ObraMusical" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.ObrasRecibidas" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.ProgramaDominical" Width="1.5" PointX="5.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.Solicitante" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__Musico__idCuenta__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__Musico__idDirecc__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__DonacionE__folio__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__DonacionE__idEst__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__DonacionE__idSol__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__DonacionI__folio__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__DonacionI__idEst__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__DonacionI__idMus__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__ObrasReci__idDon__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__ObraMusic__idGen__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__Musico__idInstru__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__ObrasReci__folio__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="BandaDelEstadoModel.FK__ProgramaD__folio__403A8C7D" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BandaDelEstadoModel.catalogocoord" Width="1.5" PointX="8.25" PointY="3.25" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

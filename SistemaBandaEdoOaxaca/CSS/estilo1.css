@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+     font-size: 14px;
+}
+
+.center {
+		  margin-left: auto;
+          margin-right: auto;
+          margin-top: 3px;
+          margin-bottom: 3px;
+          text-align: center; 
+}
+
+#Tabla{
+	 width:1000px;
+	 border:1;
+	
+}
+
+#LogoUno{
+    width: 70px;
+    height: 70px;
+  }
+  
+  #Banner{
+     font-family:Lassus;
+    font-size:80px;
+}
+  #banner2{
+    width: 800px;
+    height: 130px;
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border:none;
+  }
+
+#logoDos {
+    width: 70px;
+    height: 70px;
+}
+header{
+  width: 100%;
+}

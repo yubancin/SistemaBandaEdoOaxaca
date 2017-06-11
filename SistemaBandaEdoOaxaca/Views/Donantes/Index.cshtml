@@ -1,0 +1,80 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.Donante>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Donantes</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo Donante", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoPaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoMaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.procedencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.correoElectronico)
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoPaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoMaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.procedencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.correoElectronico)
+        </td>
+
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.idDonante })
+        </td>
+        <td>
+            @Html.ActionLink("Detalles", "Details", new { id = item.idDonante })
+        </td>
+        <td>
+            @Html.ActionLink("Borrar", "Delete", new { id = item.idDonante })|
+        </td>
+        <td>
+            @Ajax.ActionLink("Ver Donaciones", "detalle", "Donantes", new { id = item.idDonante }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "detalle" })|
+        </td>
+
+
+    </tr>
+}
+
+</table>
+<p>
+   Detalle de la Donacion
+</p>
+<div id="detalle">
+
+</div>

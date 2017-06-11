@@ -1,0 +1,87 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.ObraMusical>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LISTA DE OBRAS MUSICALES</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tituloObra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.autor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.anio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.disponibilidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paginas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numPartichelas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaIngreso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genero.genero1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tituloObra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.autor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.anio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.disponibilidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paginas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numPartichelas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaIngreso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genero.genero1)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.folio }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.folio }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.folio })
+        </td>
+    </tr>
+}
+
+</table>

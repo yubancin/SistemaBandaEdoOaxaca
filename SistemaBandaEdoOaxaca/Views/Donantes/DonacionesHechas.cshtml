@@ -1,0 +1,28 @@
+﻿@model List<SistemaBandaEdoOaxaca.ObrasRecibidas>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Donador</th>
+            <th>Obra Musical</th>
+            <th>Telefono</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Donante.nombre</td>
+                <td>@item.Donante.apellidoPaterno</td>
+                <td>@item.Donante.apellidoMaterno</td>
+                <td>@item.Donante.procedencia</td>
+                <td>@item.ObraMusical.tituloObra</td>
+                <td>@item.ObraMusical.numPartichelas</td>
+                <td>@item.ObraMusical.Genero</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

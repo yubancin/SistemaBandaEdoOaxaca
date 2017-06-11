@@ -1,0 +1,64 @@
+﻿@model SistemaBandaEdoOaxaca.EventosProximos
+
+@{
+    ViewBag.Title = "Borrar Evento";
+}
+
+<h2>Borrar</h2>
+
+<h3>Estas Seguro de querer borrar este registro?</h3>
+<div>
+  
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horaEmpiezo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horaEmpiezo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.horaSalida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horaSalida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Orden)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Orden)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar a la Lista", "Index")
+        </div>
+    }
+</div>

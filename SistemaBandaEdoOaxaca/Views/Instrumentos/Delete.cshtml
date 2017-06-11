@@ -1,0 +1,32 @@
+﻿@model SistemaBandaEdoOaxaca.Instrumentos
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Borrar</h2>
+
+<h3>Estas Seguro de querer borrar este registro?</h3>
+<div>
+    <h4>Instrumentos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreInstrumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreInstrumento)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar a la Lista", "Index")
+        </div>
+    }
+</div>

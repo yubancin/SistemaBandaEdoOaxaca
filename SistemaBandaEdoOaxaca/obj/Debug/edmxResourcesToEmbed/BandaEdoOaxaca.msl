@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BandaDelEstadoModelStoreContainer" CdmEntityContainer="BandaDelEstadoEntities">
+    <EntitySetMapping Name="Cuenta">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Cuenta">
+        <MappingFragment StoreEntitySet="Cuenta">
+          <ScalarProperty Name="idCuenta" ColumnName="idCuenta" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="tipoCuenta" ColumnName="tipoCuenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Direccion">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Direccion">
+        <MappingFragment StoreEntitySet="Direccion">
+          <ScalarProperty Name="idDireccion" ColumnName="idDireccion" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="colonia" ColumnName="colonia" />
+          <ScalarProperty Name="entidadFederativa" ColumnName="entidadFederativa" />
+          <ScalarProperty Name="pais" ColumnName="pais" />
+          <ScalarProperty Name="codigoPostal" ColumnName="codigoPostal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonacionExterna">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.DonacionExterna">
+        <MappingFragment StoreEntitySet="DonacionExterna">
+          <ScalarProperty Name="idSolicitante" ColumnName="idSolicitante" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="isReciproco" ColumnName="isReciproco" />
+          <ScalarProperty Name="objeto" ColumnName="objeto" />
+          <ScalarProperty Name="idDonacionExterna" ColumnName="idDonacionExterna" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonacionInterna">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.DonacionInterna">
+        <MappingFragment StoreEntitySet="DonacionInterna">
+          <ScalarProperty Name="idMusico" ColumnName="idMusico" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="isReciproco" ColumnName="isReciproco" />
+          <ScalarProperty Name="objeto" ColumnName="objeto" />
+          <ScalarProperty Name="idDonacionInterna" ColumnName="idDonacionInterna" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Donante">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Donante">
+        <MappingFragment StoreEntitySet="Donante">
+          <ScalarProperty Name="idDonante" ColumnName="idDonante" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="procedencia" ColumnName="procedencia" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="correoElectronico" ColumnName="correoElectronico" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estados">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Estados">
+        <MappingFragment StoreEntitySet="Estados">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventosProximos">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.EventosProximos">
+        <MappingFragment StoreEntitySet="EventosProximos">
+          <ScalarProperty Name="idEvento" ColumnName="idEvento" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="lugar" ColumnName="lugar" />
+          <ScalarProperty Name="horaEmpiezo" ColumnName="horaEmpiezo" />
+          <ScalarProperty Name="horaSalida" ColumnName="horaSalida" />
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genero">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Genero">
+        <MappingFragment StoreEntitySet="Genero">
+          <ScalarProperty Name="idGenero" ColumnName="idGenero" />
+          <ScalarProperty Name="genero1" ColumnName="genero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instrumentos">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Instrumentos">
+        <MappingFragment StoreEntitySet="Instrumentos">
+          <ScalarProperty Name="idInstrumento" ColumnName="idInstrumento" />
+          <ScalarProperty Name="nombreInstrumento" ColumnName="nombreInstrumento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musico">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Musico">
+        <MappingFragment StoreEntitySet="Musico">
+          <ScalarProperty Name="idMusico" ColumnName="idMusico" />
+          <ScalarProperty Name="idCuenta" ColumnName="idCuenta" />
+          <ScalarProperty Name="idDireccion" ColumnName="idDireccion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="numEmpleado" ColumnName="numEmpleado" />
+          <ScalarProperty Name="nivel" ColumnName="nivel" />
+          <ScalarProperty Name="nss" ColumnName="nss" />
+          <ScalarProperty Name="gradoEstudios" ColumnName="gradoEstudios" />
+          <ScalarProperty Name="idInstrumento" ColumnName="idInstrumento" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObraMusical">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.ObraMusical">
+        <MappingFragment StoreEntitySet="ObraMusical">
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="tituloObra" ColumnName="tituloObra" />
+          <ScalarProperty Name="autor" ColumnName="autor" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="disponibilidad" ColumnName="disponibilidad" />
+          <ScalarProperty Name="paginas" ColumnName="paginas" />
+          <ScalarProperty Name="numPartichelas" ColumnName="numPartichelas" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+          <ScalarProperty Name="idGenero" ColumnName="idGenero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObrasRecibidas">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.ObrasRecibidas">
+        <MappingFragment StoreEntitySet="ObrasRecibidas">
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="idDonante" ColumnName="idDonante" />
+          <ScalarProperty Name="idObraRecibida" ColumnName="idObraRecibida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramaDominical">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.ProgramaDominical">
+        <MappingFragment StoreEntitySet="ProgramaDominical">
+          <ScalarProperty Name="idProgramaDominical" ColumnName="idProgramaDominical" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="lugar" ColumnName="lugar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Solicitante">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.Solicitante">
+        <MappingFragment StoreEntitySet="Solicitante">
+          <ScalarProperty Name="idSolicitante" ColumnName="idSolicitante" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="dependencia" ColumnName="dependencia" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="correoElectronico" ColumnName="correoElectronico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogocoord">
+      <EntityTypeMapping TypeName="BandaDelEstadoModel.catalogocoord">
+        <MappingFragment StoreEntitySet="catalogocoord">
+          <ScalarProperty Name="telefono1" ColumnName="telefono1" />
+          <ScalarProperty Name="lada" ColumnName="lada" />
+          <ScalarProperty Name="nombrect" ColumnName="nombrect" />
+          <ScalarProperty Name="longitud2" ColumnName="longitud2" />
+          <ScalarProperty Name="latitud2" ColumnName="latitud2" />
+          <ScalarProperty Name="clavecct" ColumnName="clavecct" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

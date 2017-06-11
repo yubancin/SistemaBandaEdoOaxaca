@@ -1,0 +1,122 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/CSS/youtubegallerywall.css" />
+<style>
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+</style>
+
+
+
+<script>
+
+jQuery(function(){ // on DOM load
+	//syntax $(selector).youtubegallery()
+	$('#youtubelist').youtubegallery()
+})
+
+</script>
+
+<script>
+ 
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+</script>
+
+<!--REPRODUCTOR DE MUSICA EN LA NUBE-->
+<div class="center"><h1>GALERÍA</h1><h2>Album de Éxitos de la Banda</h2></div>
+<div id="cp_widget_28acf474-0db6-475e-88b4-d36c2a5407f6">...</div>
+<script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_28acf474-0db6-475e-88b4-d36c2a5407f6"; cpo["_fid"] = "AwGAt99Kiez0";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script><noscript><span>New Gallery 2017/5/21</span></noscript>
+
+<body>
+
+  
+ <div class="center"><h1>Imágenes</h1></div>
+
+        <div class="gallery">
+            
+                <img src="~/Imagenes/10.jpg" alt="Fjords" width="600" height="400">
+            
+            <div class="desc">Seccion de Tubas y Baritonos</div>
+        </div>
+
+        <div class="gallery">
+           
+                <img src="~/Imagenes/8.jpg" alt="Forest" width="600" height="400">
+           
+            <div class="desc">Mtro. Eliseo Martinez Garcia</div>
+        </div>
+
+        <div class="gallery">
+         
+                <img src="~/Imagenes/5.jpg" alt="Northern Lights" width="600" height="400">
+          
+            <div class="desc">Concierto Bajo el Laurel</div>
+        </div>
+
+        <div class="gallery">
+      
+                <img src="~/Imagenes/13.jpg" alt="Mountains" width="600" height="400">
+        
+            <div class="desc">Concierto en teatro Macedonio Alcalá</div>
+        </div>
+    <div class="gallery">
+
+        <img src="~/Imagenes/2.jpg" alt="Mountains" width="600" height="400">
+
+        <div class="desc">Silverio Perez</div>
+    </div>
+    <div class="gallery">
+
+        <img src="~/Imagenes/4.jpg" alt="Mountains" width="600" height="400">
+
+        <div class="desc">Concierto en Teatro Metropolitan</div>
+    </div>
+   
+</body>

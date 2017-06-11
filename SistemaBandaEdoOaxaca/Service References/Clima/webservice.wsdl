@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Mario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="opc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="THI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="THIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="THIResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Estacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numero" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstacionDatos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstacionDatosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstacionDatosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataStationTemtHumr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataStationTemtHumrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataStationTemtHumrResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GPSEstaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="latitud" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="longi" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GPSEstacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GPSEstacionesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEstaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="edo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEstacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEstacionesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEstadisticos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="estacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEstadisticosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEstadisticosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEstacionesPorNombre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEstacionesPorNombreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEstacionesPorNombreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPronosticos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPronosticosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPronosticosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteEst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idEdo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteEstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteEstResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarReporteEst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idEdo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviarReporteEstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnviarReporteEstResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="MarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Mario" />
+  </wsdl:message>
+  <wsdl:message name="MarioSoapOut">
+    <wsdl:part name="parameters" element="tns:MarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="THISoapIn">
+    <wsdl:part name="parameters" element="tns:THI" />
+  </wsdl:message>
+  <wsdl:message name="THISoapOut">
+    <wsdl:part name="parameters" element="tns:THIResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstacionSoapIn">
+    <wsdl:part name="parameters" element="tns:Estacion" />
+  </wsdl:message>
+  <wsdl:message name="EstacionSoapOut">
+    <wsdl:part name="parameters" element="tns:EstacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstacionDatosSoapIn">
+    <wsdl:part name="parameters" element="tns:EstacionDatos" />
+  </wsdl:message>
+  <wsdl:message name="EstacionDatosSoapOut">
+    <wsdl:part name="parameters" element="tns:EstacionDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataStationTemtHumrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataStationTemtHumr" />
+  </wsdl:message>
+  <wsdl:message name="GetDataStationTemtHumrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataStationTemtHumrResponse" />
+  </wsdl:message>
+  <wsdl:message name="GPSEstacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:GPSEstaciones" />
+  </wsdl:message>
+  <wsdl:message name="GPSEstacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:GPSEstacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEstacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEstaciones" />
+  </wsdl:message>
+  <wsdl:message name="GetEstacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEstacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEstadisticosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEstadisticos" />
+  </wsdl:message>
+  <wsdl:message name="GetEstadisticosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEstadisticosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEstacionesPorNombreSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEstacionesPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="GetEstacionesPorNombreSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEstacionesPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPronosticosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPronosticos" />
+  </wsdl:message>
+  <wsdl:message name="GetPronosticosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPronosticosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteEstSoapIn">
+    <wsdl:part name="parameters" element="tns:ReporteEst" />
+  </wsdl:message>
+  <wsdl:message name="ReporteEstSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteEstResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnviarReporteEstSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviarReporteEst" />
+  </wsdl:message>
+  <wsdl:message name="EnviarReporteEstSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviarReporteEstResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Mario">
+      <wsdl:input message="tns:MarioSoapIn" />
+      <wsdl:output message="tns:MarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="THI">
+      <wsdl:input message="tns:THISoapIn" />
+      <wsdl:output message="tns:THISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Estacion">
+      <wsdl:input message="tns:EstacionSoapIn" />
+      <wsdl:output message="tns:EstacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstacionDatos">
+      <wsdl:input message="tns:EstacionDatosSoapIn" />
+      <wsdl:output message="tns:EstacionDatosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataStationTemtHumr">
+      <wsdl:input message="tns:GetDataStationTemtHumrSoapIn" />
+      <wsdl:output message="tns:GetDataStationTemtHumrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GPSEstaciones">
+      <wsdl:input message="tns:GPSEstacionesSoapIn" />
+      <wsdl:output message="tns:GPSEstacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEstaciones">
+      <wsdl:input message="tns:GetEstacionesSoapIn" />
+      <wsdl:output message="tns:GetEstacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEstadisticos">
+      <wsdl:input message="tns:GetEstadisticosSoapIn" />
+      <wsdl:output message="tns:GetEstadisticosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEstacionesPorNombre">
+      <wsdl:input message="tns:GetEstacionesPorNombreSoapIn" />
+      <wsdl:output message="tns:GetEstacionesPorNombreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPronosticos">
+      <wsdl:input message="tns:GetPronosticosSoapIn" />
+      <wsdl:output message="tns:GetPronosticosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteEst">
+      <wsdl:input message="tns:ReporteEstSoapIn" />
+      <wsdl:output message="tns:ReporteEstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarReporteEst">
+      <wsdl:input message="tns:EnviarReporteEstSoapIn" />
+      <wsdl:output message="tns:EnviarReporteEstSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mario">
+      <soap:operation soapAction="http://tempuri.org/Mario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="THI">
+      <soap:operation soapAction="http://tempuri.org/THI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Estacion">
+      <soap:operation soapAction="http://tempuri.org/Estacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstacionDatos">
+      <soap:operation soapAction="http://tempuri.org/EstacionDatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataStationTemtHumr">
+      <soap:operation soapAction="http://tempuri.org/GetDataStationTemtHumr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GPSEstaciones">
+      <soap:operation soapAction="http://tempuri.org/GPSEstaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEstaciones">
+      <soap:operation soapAction="http://tempuri.org/GetEstaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEstadisticos">
+      <soap:operation soapAction="http://tempuri.org/GetEstadisticos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEstacionesPorNombre">
+      <soap:operation soapAction="http://tempuri.org/GetEstacionesPorNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPronosticos">
+      <soap:operation soapAction="http://tempuri.org/GetPronosticos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteEst">
+      <soap:operation soapAction="http://tempuri.org/ReporteEst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarReporteEst">
+      <soap:operation soapAction="http://tempuri.org/EnviarReporteEst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mario">
+      <soap12:operation soapAction="http://tempuri.org/Mario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="THI">
+      <soap12:operation soapAction="http://tempuri.org/THI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Estacion">
+      <soap12:operation soapAction="http://tempuri.org/Estacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstacionDatos">
+      <soap12:operation soapAction="http://tempuri.org/EstacionDatos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataStationTemtHumr">
+      <soap12:operation soapAction="http://tempuri.org/GetDataStationTemtHumr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GPSEstaciones">
+      <soap12:operation soapAction="http://tempuri.org/GPSEstaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEstaciones">
+      <soap12:operation soapAction="http://tempuri.org/GetEstaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEstadisticos">
+      <soap12:operation soapAction="http://tempuri.org/GetEstadisticos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEstacionesPorNombre">
+      <soap12:operation soapAction="http://tempuri.org/GetEstacionesPorNombre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPronosticos">
+      <soap12:operation soapAction="http://tempuri.org/GetPronosticos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteEst">
+      <soap12:operation soapAction="http://tempuri.org/ReporteEst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarReporteEst">
+      <soap12:operation soapAction="http://tempuri.org/EnviarReporteEst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://clima.inifap.gob.mx/data/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://clima.inifap.gob.mx/data/webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

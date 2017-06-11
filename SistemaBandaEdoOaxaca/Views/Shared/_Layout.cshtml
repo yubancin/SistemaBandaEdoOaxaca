@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link href="@Url.Content("~/CSS/estilo1.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/estilo2.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/CSS1.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/fonts.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/Menur.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/carrusel.css")" rel="stylesheet" type="text/css" />
+   
+
+    <script type="text/javascript"
+            src="~/JQuery/jquery-3.1.1.js">
+    </script>
+    <script type="text/javascript"
+            src="~/JQueryIU/jquery-ui.js">
+    </script>
+
+    <script>
+        var navbarHeight = $('.navbar').height();
+
+        $(window).scroll(function () {
+            var navbarColor = "62,195,246";//color attr for rgba
+            var smallLogoHeight = $('.small-logo').height();
+            var bigLogoHeight = $('.big-logo').height();
+
+
+            var smallLogoEndPos = 0;
+            var smallSpeed = (smallLogoHeight / bigLogoHeight);
+
+            var ySmall = ($(window).scrollTop() * smallSpeed);
+
+            var smallPadding = navbarHeight - ySmall;
+            if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
+            if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
+            if (smallPadding < 0) { smallPadding = 0; }
+
+            $('.small-logo-container ').css({ "padding-top": smallPadding });
+
+            var navOpacity = ySmall / smallLogoHeight;
+            if (navOpacity > 1) { navOpacity = 1; }
+            if (navOpacity < 0) { navOpacity = 0; }
+            var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
+            $('.navbar').css({ "background-color": navBackColor });
+
+            var shadowOpacity = navOpacity * 0.4;
+            if (ySmall > 1) {
+                $('.navbar').css({ "box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")" });
+            } else {
+                $('.navbar').css({ "box-shadow": "none" });
+            }
+
+
+
+        });
+
+
+    </script>
+    <style>
+        .youtube-player {
+            position: relative;
+            padding-bottom: 56.23%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 8px 0 8px 0;
+        }
+
+            .youtube-player iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 100;
+                background: transparent;
+            }
+
+            .youtube-player img {
+                bottom: 0;
+                display: block;
+                left: 0;
+                margin: auto;
+                max-width: 100%;
+                width: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: none;
+                height: auto;
+                cursor: pointer;
+                -webkit-transition: .4s all;
+                -moz-transition: .4s all;
+                transition: .4s all;
+            }
+
+                .youtube-player img:hover {
+                    -webkit-filter: brightness(75%);
+                }
+
+            .youtube-player .play {
+                height: 72px;
+                width: 72px;
+                left: 50%;
+                top: 50%;
+                margin-left: -36px;
+                margin-top: -36px;
+                position: absolute;
+                background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+            }
+    </style>
+
+    <title>@ViewBag.Title - Banda de Musica del Estado</title>
+   <!-- <script type="text/javascript">
+        $(function () {
+            $(".slider #1").show("fade", 500);
+            $(".slider #1").delay(5500).hide("slide", { direction: "left" }, 50);
+
+            var sc = $(".slider img").length;
+            var count = 2
+
+            setInterval(function () {
+                $(".slider #" + count).show("slide", { direction: "right" }, 500);
+                $(".slider #" + count).delay(5500).hide("slide", { direction: "left" }, 50);
+
+                if (count == sc)
+                    count = 1
+                else
+                    count = count + 1
+            }, 6500);
+        });
+
+    </script>
+
+       -->
+</head>
+<body>
+    <div class="home-product">
+
+        <a style="color:#fff;" href="http://www.iluquotes.com/"></a>
+        <div class="container-fluid">
+            <div class="col-md-3 col-sm-3">
+                <div class="home-product-hedaing left-product">
+              
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="home-product-hedaing right-product">
+                  
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-8">
+            </div><!--/.col-xs-12 -->
+        </div><!--/.row -->
+    </div><!--/.container -->
+        <!-- 
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="~/Home/Index"><img border="0" src="~/Imagenes/0.jpg" width="100" height="50"></a>
+                    <a href="~/Home/Index"><img border="0" src="~/Imagenes/logoBanda.png" width="50" height="50"></a>
+                   <a class="navbar-brand" href="~/Home/Index">BANDA EDO OAX</a>
+                   
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#about">Acerca De</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#contact">Proximos Eventos</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portal de Musicos<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Solicitud de Donacion</a></li>
+                                <li><a href="#">Ver Donaciones</a></li>
+                                <li><a href="#">Ver Donantes</a></li>
+                                <li><a href="#">Ver Solicitantes</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li><a href="../navbar/">Iniciar Sesión</a></li>
+                        <li><a href="../navbar-static-top/">Registrate</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+ -->
+        
+
+
+    <!--<h1 class="center">BANDA DE MÚSICA DEL ESTADO DE OAXACA</h1>-->
+    <!--
+
+        <center>
+        <div>
+            <img id="logoDos" src="~/Imagenes/0.jpg" border="0" alt="" />
+            <h1 id="Letrero">Gobierno del Estado de Oaxaca</h1>
+            <h2 id="Letrero">Secretaría de las Culturas y las Artes de Oaxaca</h2>
+            <h3 id="Letrero">Banda de Música del Edo.De Oaxaca</h3>
+            <img id="LogoUno" src="~/Imagenes/logoBanda.png" border="0" alt="" />
+            </div><br />
+            </center>
+        -->
+    <!-- <div id="banner">
+          <img id="LogoUno" src="~/Imagenes/logoBanda.png" alt="">
+            <img class="center" id="banner2" src="../Imagenes/banner.png" alt="">
+          <img id="logoDos" src="~/Imagenes/0.jpg" alt="">
+      </div>
+
+      <nav class="center">
+          <ul>
+              <li> <a href="../VISTAS/Index.jsp"> <span class="primero"> <i class="icon icon-home"></i></span> Inicio</a></li>
+              <li> <a href="../VISTAS/Login.jsp"> <span class="segundo"> <i class="icon icon-radio-checked"></i></span>Iniciar Sesion</a></li>
+              <li> <a href="../VISTAS/ListaDeMusicos.jsp"> <span class="tercero"> <i class="icon icon-user-tie"></i></span>Lista de Musicos</a></li>
+              <li> <a href="../VISTAS/Galeria.jsp"> <span class="cuarto"> <i class="icon icon-images"></i></span>Galeria</a></li>
+              <li>
+                  <a href="../VISTAS/Servicios.jsp"> <span class="quinto"> <i class="icon icon-file-music"></i></span>Servicios</a>
+                  <ul>
+                      <li> <a href="#">Musicos </a></li>
+                      <li> <a href="#">Obras Musicales </a></li>
+                      <li> <a href="../ObrasMusicales">Donaciones Internas</a></li>
+                      <li> <a href="#">Donaciones Externas </a></li>
+                      <li> <a href="#">Donaciones a la Banda</a></li>
+                      <li> <a href="#">Donantes</a></li>
+                      <li> <a href="#">Solicitantes</a></li>
+                      <li> <a href="#">Proximos Eventos</a></li>
+                  </ul>
+
+              </li>
+              <li> <a href="~/Home/Contact"> <span class="primero"> <i class="icon icon-libreoffice"></i></span>Contacto</a></li>
+              <li> <a href="~/Home/Contact"> <span class="primero"> <i class="icon icon-libreoffice"></i></span>Registrate</a></li>
+
+
+          </ul>
+      </nav>
+
+      <div class="center">
+
+          <audio controls autoplay preload>
+              <source src="~/Musica/pista2.mp3" type="audio/mp3" />
+              <source src="~/Musica/pista2.mp3" type="audio/mp3" />
+              <source src="~/Musica/pista4.mp3" type="audio/mp3" />
+              <source src="~/Musica/pista5.mp3" type="audio/mp3" />
+              <source src="~/Musica/pista6.mp3" type="audio/mp3" />
+              <source src="~/Musica/pista7.mp3" type="audio/mp3" />
+              Tu navegador no soporta esta caracteristica
+          </audio>
+
+      </div>
+
+
+    <!--  <center>
+          <div id="navcontainer">
+              <ul id="navlist">
+
+
+                  <li><a href="~/Home/About">¿Quienes Somos?</a></li>
+                  <li><a href="~/EventosProximos/VistaDetalleEventosProximos">Proximos Eventos</a></li>
+                  <li><a href="~/Musicoes/Index">Lista de Musicos</a></li>
+                  <li><a href="~/Generoes/Index"> Generos Musicales</a></li>
+                  <li><a href="~/Instrumentos/Index">Catalogo de Instrumentos</a></li>
+                  <li><a href="~/DonacionExternas/Index">Donaciones Externas</a></li>
+
+                  <li><a href="~/DonacionInternas/Index">Donaciones Internas</a></li>
+                  <li><a href="~/Donantes/Index">Donadores</a></li>
+                  <li><a href="~/Solicitantes/Index">Solicitantes</a></li>
+                  <li><a href="~/ObraMusicals/Index">Obras Musicales</a></li>
+                  <li><a href="~/Estados/Index">Catalogo de Estados</a></li>
+                  <li><a href="~/Cuentas/Index">Cuentas</a></li>
+                  <li><a href="~/Direccions/Index">Direcciones</a></li>
+
+                  <li><a href="~/ObrasRecibidas/Index">Nuevas Obras Donadas</a></li>
+                  <li><a href="~/ProgramaDominicals/Index">Programa Dominical</a></li>
+                  <li><a href="~/ObrasPorGenero">Obras Por Genero</a></li>
+                  <li><a href="~/Home/Contact">Contacto</a></li>
+
+              </ul>
+          </div>
+     -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Banda Edo OAXACA", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Info
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Acerca De", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Donaciones
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="~/DonacionInternas/Index">Interna</a></li>
+                            <li><a href="~/DonacionExternas/Index">Externa</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Musicos
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          
+                            <li><a href="~/Cuentas/Create">Registrar Musico</a></li>
+                            <li><a href="~/Musicoes/Index">Lista de Musicos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Obras Musicales
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                           
+                            <li><a href="~/ObraMusicals/Create">Registrar Obra Musical</a></li>
+                            <li><a href="~/ObraMusicals/Index">Lista de Obra Musicales</a></li>
+                            <li><a href="~/ObrasPorGenero/Index">Obras Musicales por Genero</a></li>
+                            <li><a href="~/ObrasRecibidas/Index">Obras Musicales Recibidas</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Eventos Proximos
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="~/EventosProximos/Create">Registrar Eventos</a></li>
+                            <li><a href="~/EventosProximos/VistaDetalleEventosProximos">Lista de Eventos Musicales</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Varios
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="~/Solicitantes/Create">Registrar Solicitante Foraneo</a></li>
+                            <li><a href="~/Solicitantes/Index">Lista de Solicitantes</a></li>
+                            <li class="divider"></li>
+                            <li><a href="~/Generoes/Create">Registrar Genero</a></li>
+                            <li><a href="~/Generoes/Index">Lista de Genero</a></li>
+                            <li class="divider"></li>
+                            <li><a href="~/Direccions/Create">Registrar Direccion</a></li>
+                            <li><a href="~/Direccions/Index">Lista de Direcciones</a></li>
+                            <li class="divider"></li>
+                            <li><a href="~/Donantes/Create">Registrar Donador</a></li>
+                            <li><a href="~/Donantes/Index">Lista de Donadores</a></li>
+                            <li class="divider"></li>
+
+                            <li><a href="~/Instrumentos/Create">Registrar Instrumento</a></li>
+                            <li><a href="~/Instrumentos/Index">Lista de Instrumento</a></li>
+                            <li class="divider"></li>
+                            <li><a href="~/Cuentas/Create">Registrar Cuenta</a></li>
+                            <li><a href="~/Cuentas/Index">Lista de Cuentas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+               
+
+                
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+        <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="center">
+                <p>&copy; @DateTime.Now.Year - Banda de Musica del Estado</p>
+            </div>
+
+        </footer>
+    </div>
+        
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

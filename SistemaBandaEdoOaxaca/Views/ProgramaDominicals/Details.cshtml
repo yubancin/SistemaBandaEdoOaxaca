@@ -1,0 +1,42 @@
+﻿@model SistemaBandaEdoOaxaca.ProgramaDominical
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Programa Dominical</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lugar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObraMusical.tituloObra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObraMusical.tituloObra)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idProgramaDominical }) |
+    @Html.ActionLink("Regresar a la Lista", "Index")
+</p>

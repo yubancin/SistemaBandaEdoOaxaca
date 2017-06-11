@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.EventosProximos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lugar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horaEmpiezo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.horaSalida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Orden)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lugar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horaEmpiezo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.horaSalida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Orden)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idEvento }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.idEvento }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.idEvento })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+

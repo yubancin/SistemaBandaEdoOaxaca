@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BandaDelEstadoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cuenta">
+    <Key>
+      <PropertyRef Name="idCuenta" />
+    </Key>
+    <Property Name="idCuenta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuario" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contrasena" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tipoCuenta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Musico" Relationship="Self.FK__Musico__idCuenta__3D5E1FD2" FromRole="Cuenta" ToRole="Musico" />
+  </EntityType>
+  <EntityType Name="Direccion">
+    <Key>
+      <PropertyRef Name="idDireccion" />
+    </Key>
+    <Property Name="idDireccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="calle" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numero" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="colonia" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="entidadFederativa" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pais" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="codigoPostal" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Musico" Relationship="Self.FK__Musico__idDirecc__4222D4EF" FromRole="Direccion" ToRole="Musico" />
+  </EntityType>
+  <EntityType Name="DonacionExterna">
+    <Key>
+      <PropertyRef Name="idDonacionExterna" />
+    </Key>
+    <Property Name="idSolicitante" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="folio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isReciproco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="objeto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="idDonacionExterna" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idEstado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ObraMusical" Relationship="Self.FK__DonacionE__folio__3F466844" FromRole="DonacionExterna" ToRole="ObraMusical" />
+    <NavigationProperty Name="Estados" Relationship="Self.FK__DonacionE__idEst__45F365D3" FromRole="DonacionExterna" ToRole="Estados" />
+    <NavigationProperty Name="Solicitante" Relationship="Self.FK__DonacionE__idSol__4316F928" FromRole="DonacionExterna" ToRole="Solicitante" />
+  </EntityType>
+  <EntityType Name="DonacionInterna">
+    <Key>
+      <PropertyRef Name="idDonacionInterna" />
+    </Key>
+    <Property Name="idMusico" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="folio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isReciproco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="objeto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idDonacionInterna" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idEstado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ObraMusical" Relationship="Self.FK__DonacionI__folio__3E52440B" FromRole="DonacionInterna" ToRole="ObraMusical" />
+    <NavigationProperty Name="Estados" Relationship="Self.FK__DonacionI__idEst__44FF419A" FromRole="DonacionInterna" ToRole="Estados" />
+    <NavigationProperty Name="Musico" Relationship="Self.FK__DonacionI__idMus__3C69FB99" FromRole="DonacionInterna" ToRole="Musico" />
+  </EntityType>
+  <EntityType Name="Donante">
+    <Key>
+      <PropertyRef Name="idDonante" />
+    </Key>
+    <Property Name="idDonante" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoPaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="procedencia" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correoElectronico" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ObrasRecibidas" Relationship="Self.FK__ObrasReci__idDon__440B1D61" FromRole="Donante" ToRole="ObrasRecibidas" />
+  </EntityType>
+  <EntityType Name="Estados">
+    <Key>
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEstado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DonacionExterna" Relationship="Self.FK__DonacionE__idEst__45F365D3" FromRole="Estados" ToRole="DonacionExterna" />
+    <NavigationProperty Name="DonacionInterna" Relationship="Self.FK__DonacionI__idEst__44FF419A" FromRole="Estados" ToRole="DonacionInterna" />
+  </EntityType>
+  <EntityType Name="EventosProximos">
+    <Key>
+      <PropertyRef Name="idEvento" />
+    </Key>
+    <Property Name="idEvento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lugar" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="horaEmpiezo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="horaSalida" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Orden" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genero">
+    <Key>
+      <PropertyRef Name="idGenero" />
+    </Key>
+    <Property Name="idGenero" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="genero1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ObraMusical" Relationship="Self.FK__ObraMusic__idGen__47DBAE45" FromRole="Genero" ToRole="ObraMusical" />
+  </EntityType>
+  <EntityType Name="Instrumentos">
+    <Key>
+      <PropertyRef Name="idInstrumento" />
+    </Key>
+    <Property Name="idInstrumento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreInstrumento" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Musico" Relationship="Self.FK__Musico__idInstru__46E78A0C" FromRole="Instrumentos" ToRole="Musico" />
+  </EntityType>
+  <EntityType Name="Musico">
+    <Key>
+      <PropertyRef Name="idMusico" />
+    </Key>
+    <Property Name="idMusico" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idCuenta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idDireccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoPaterno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoMaterno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nivel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nss" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gradoEstudios" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idInstrumento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Cuenta" Relationship="Self.FK__Musico__idCuenta__3D5E1FD2" FromRole="Musico" ToRole="Cuenta" />
+    <NavigationProperty Name="Direccion" Relationship="Self.FK__Musico__idDirecc__4222D4EF" FromRole="Musico" ToRole="Direccion" />
+    <NavigationProperty Name="DonacionInterna" Relationship="Self.FK__DonacionI__idMus__3C69FB99" FromRole="Musico" ToRole="DonacionInterna" />
+    <NavigationProperty Name="Instrumentos" Relationship="Self.FK__Musico__idInstru__46E78A0C" FromRole="Musico" ToRole="Instrumentos" />
+  </EntityType>
+  <EntityType Name="ObraMusical">
+    <Key>
+      <PropertyRef Name="folio" />
+    </Key>
+    <Property Name="folio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tituloObra" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="autor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="anio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="region" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="disponibilidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="paginas" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numPartichelas" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fechaIngreso" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idGenero" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DonacionExterna" Relationship="Self.FK__DonacionE__folio__3F466844" FromRole="ObraMusical" ToRole="DonacionExterna" />
+    <NavigationProperty Name="DonacionInterna" Relationship="Self.FK__DonacionI__folio__3E52440B" FromRole="ObraMusical" ToRole="DonacionInterna" />
+    <NavigationProperty Name="Genero" Relationship="Self.FK__ObraMusic__idGen__47DBAE45" FromRole="ObraMusical" ToRole="Genero" />
+    <NavigationProperty Name="ObrasRecibidas" Relationship="Self.FK__ObrasReci__folio__412EB0B6" FromRole="ObraMusical" ToRole="ObrasRecibidas" />
+    <NavigationProperty Name="ProgramaDominical" Relationship="Self.FK__ProgramaD__folio__403A8C7D" FromRole="ObraMusical" ToRole="ProgramaDominical" />
+  </EntityType>
+  <EntityType Name="ObrasRecibidas">
+    <Key>
+      <PropertyRef Name="idObraRecibida" />
+    </Key>
+    <Property Name="folio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idDonante" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idObraRecibida" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Donante" Relationship="Self.FK__ObrasReci__idDon__440B1D61" FromRole="ObrasRecibidas" ToRole="Donante" />
+    <NavigationProperty Name="ObraMusical" Relationship="Self.FK__ObrasReci__folio__412EB0B6" FromRole="ObrasRecibidas" ToRole="ObraMusical" />
+  </EntityType>
+  <EntityType Name="ProgramaDominical">
+    <Key>
+      <PropertyRef Name="idProgramaDominical" />
+    </Key>
+    <Property Name="idProgramaDominical" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="folio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="lugar" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ObraMusical" Relationship="Self.FK__ProgramaD__folio__403A8C7D" FromRole="ProgramaDominical" ToRole="ObraMusical" />
+  </EntityType>
+  <EntityType Name="Solicitante">
+    <Key>
+      <PropertyRef Name="idSolicitante" />
+    </Key>
+    <Property Name="idSolicitante" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoPaterno" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoMaterno" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dependencia" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correoElectronico" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DonacionExterna" Relationship="Self.FK__DonacionE__idSol__4316F928" FromRole="Solicitante" ToRole="DonacionExterna" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__Musico__idCuenta__3D5E1FD2">
+    <End Role="Cuenta" Type="Self.Cuenta" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Musico" Type="Self.Musico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuenta">
+        <PropertyRef Name="idCuenta" />
+      </Principal>
+      <Dependent Role="Musico">
+        <PropertyRef Name="idCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Musico__idDirecc__4222D4EF">
+    <End Role="Direccion" Type="Self.Direccion" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Musico" Type="Self.Musico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Direccion">
+        <PropertyRef Name="idDireccion" />
+      </Principal>
+      <Dependent Role="Musico">
+        <PropertyRef Name="idDireccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonacionE__folio__3F466844">
+    <End Role="ObraMusical" Type="Self.ObraMusical" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DonacionExterna" Type="Self.DonacionExterna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObraMusical">
+        <PropertyRef Name="folio" />
+      </Principal>
+      <Dependent Role="DonacionExterna">
+        <PropertyRef Name="folio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonacionE__idEst__45F365D3">
+    <End Role="Estados" Type="Self.Estados" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DonacionExterna" Type="Self.DonacionExterna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estados">
+        <PropertyRef Name="idEstado" />
+      </Principal>
+      <Dependent Role="DonacionExterna">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonacionE__idSol__4316F928">
+    <End Role="Solicitante" Type="Self.Solicitante" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DonacionExterna" Type="Self.DonacionExterna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Solicitante">
+        <PropertyRef Name="idSolicitante" />
+      </Principal>
+      <Dependent Role="DonacionExterna">
+        <PropertyRef Name="idSolicitante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonacionI__folio__3E52440B">
+    <End Role="ObraMusical" Type="Self.ObraMusical" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DonacionInterna" Type="Self.DonacionInterna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObraMusical">
+        <PropertyRef Name="folio" />
+      </Principal>
+      <Dependent Role="DonacionInterna">
+        <PropertyRef Name="folio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonacionI__idEst__44FF419A">
+    <End Role="Estados" Type="Self.Estados" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DonacionInterna" Type="Self.DonacionInterna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estados">
+        <PropertyRef Name="idEstado" />
+      </Principal>
+      <Dependent Role="DonacionInterna">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonacionI__idMus__3C69FB99">
+    <End Role="Musico" Type="Self.Musico" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DonacionInterna" Type="Self.DonacionInterna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musico">
+        <PropertyRef Name="idMusico" />
+      </Principal>
+      <Dependent Role="DonacionInterna">
+        <PropertyRef Name="idMusico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ObrasReci__idDon__440B1D61">
+    <End Role="Donante" Type="Self.Donante" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ObrasRecibidas" Type="Self.ObrasRecibidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donante">
+        <PropertyRef Name="idDonante" />
+      </Principal>
+      <Dependent Role="ObrasRecibidas">
+        <PropertyRef Name="idDonante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ObraMusic__idGen__47DBAE45">
+    <End Role="Genero" Type="Self.Genero" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ObraMusical" Type="Self.ObraMusical" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genero">
+        <PropertyRef Name="idGenero" />
+      </Principal>
+      <Dependent Role="ObraMusical">
+        <PropertyRef Name="idGenero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Musico__idInstru__46E78A0C">
+    <End Role="Instrumentos" Type="Self.Instrumentos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Musico" Type="Self.Musico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instrumentos">
+        <PropertyRef Name="idInstrumento" />
+      </Principal>
+      <Dependent Role="Musico">
+        <PropertyRef Name="idInstrumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ObrasReci__folio__412EB0B6">
+    <End Role="ObraMusical" Type="Self.ObraMusical" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ObrasRecibidas" Type="Self.ObrasRecibidas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObraMusical">
+        <PropertyRef Name="folio" />
+      </Principal>
+      <Dependent Role="ObrasRecibidas">
+        <PropertyRef Name="folio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProgramaD__folio__403A8C7D">
+    <End Role="ObraMusical" Type="Self.ObraMusical" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProgramaDominical" Type="Self.ProgramaDominical" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObraMusical">
+        <PropertyRef Name="folio" />
+      </Principal>
+      <Dependent Role="ProgramaDominical">
+        <PropertyRef Name="folio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BandaDelEstadoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cuenta" EntityType="Self.Cuenta" />
+    <EntitySet Name="Direccion" EntityType="Self.Direccion" />
+    <EntitySet Name="DonacionExterna" EntityType="Self.DonacionExterna" />
+    <EntitySet Name="DonacionInterna" EntityType="Self.DonacionInterna" />
+    <EntitySet Name="Donante" EntityType="Self.Donante" />
+    <EntitySet Name="Estados" EntityType="Self.Estados" />
+    <EntitySet Name="EventosProximos" EntityType="Self.EventosProximos" />
+    <EntitySet Name="Genero" EntityType="Self.Genero" />
+    <EntitySet Name="Instrumentos" EntityType="Self.Instrumentos" />
+    <EntitySet Name="Musico" EntityType="Self.Musico" />
+    <EntitySet Name="ObraMusical" EntityType="Self.ObraMusical" />
+    <EntitySet Name="ObrasRecibidas" EntityType="Self.ObrasRecibidas" />
+    <EntitySet Name="ProgramaDominical" EntityType="Self.ProgramaDominical" />
+    <EntitySet Name="Solicitante" EntityType="Self.Solicitante" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK__Musico__idCuenta__3D5E1FD2" Association="Self.FK__Musico__idCuenta__3D5E1FD2">
+      <End Role="Cuenta" EntitySet="Cuenta" />
+      <End Role="Musico" EntitySet="Musico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Musico__idDirecc__4222D4EF" Association="Self.FK__Musico__idDirecc__4222D4EF">
+      <End Role="Direccion" EntitySet="Direccion" />
+      <End Role="Musico" EntitySet="Musico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonacionE__folio__3F466844" Association="Self.FK__DonacionE__folio__3F466844">
+      <End Role="ObraMusical" EntitySet="ObraMusical" />
+      <End Role="DonacionExterna" EntitySet="DonacionExterna" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonacionE__idEst__45F365D3" Association="Self.FK__DonacionE__idEst__45F365D3">
+      <End Role="Estados" EntitySet="Estados" />
+      <End Role="DonacionExterna" EntitySet="DonacionExterna" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonacionE__idSol__4316F928" Association="Self.FK__DonacionE__idSol__4316F928">
+      <End Role="Solicitante" EntitySet="Solicitante" />
+      <End Role="DonacionExterna" EntitySet="DonacionExterna" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonacionI__folio__3E52440B" Association="Self.FK__DonacionI__folio__3E52440B">
+      <End Role="ObraMusical" EntitySet="ObraMusical" />
+      <End Role="DonacionInterna" EntitySet="DonacionInterna" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonacionI__idEst__44FF419A" Association="Self.FK__DonacionI__idEst__44FF419A">
+      <End Role="Estados" EntitySet="Estados" />
+      <End Role="DonacionInterna" EntitySet="DonacionInterna" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonacionI__idMus__3C69FB99" Association="Self.FK__DonacionI__idMus__3C69FB99">
+      <End Role="Musico" EntitySet="Musico" />
+      <End Role="DonacionInterna" EntitySet="DonacionInterna" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ObrasReci__idDon__440B1D61" Association="Self.FK__ObrasReci__idDon__440B1D61">
+      <End Role="Donante" EntitySet="Donante" />
+      <End Role="ObrasRecibidas" EntitySet="ObrasRecibidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ObraMusic__idGen__47DBAE45" Association="Self.FK__ObraMusic__idGen__47DBAE45">
+      <End Role="Genero" EntitySet="Genero" />
+      <End Role="ObraMusical" EntitySet="ObraMusical" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Musico__idInstru__46E78A0C" Association="Self.FK__Musico__idInstru__46E78A0C">
+      <End Role="Instrumentos" EntitySet="Instrumentos" />
+      <End Role="Musico" EntitySet="Musico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ObrasReci__folio__412EB0B6" Association="Self.FK__ObrasReci__folio__412EB0B6">
+      <End Role="ObraMusical" EntitySet="ObraMusical" />
+      <End Role="ObrasRecibidas" EntitySet="ObrasRecibidas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProgramaD__folio__403A8C7D" Association="Self.FK__ProgramaD__folio__403A8C7D">
+      <End Role="ObraMusical" EntitySet="ObraMusical" />
+      <End Role="ProgramaDominical" EntitySet="ProgramaDominical" />
+    </AssociationSet>
+    <EntitySet Name="catalogocoord" EntityType="BandaDelEstadoModel.catalogocoord" />
+  </EntityContainer>
+  <EntityType Name="catalogocoord">
+    <Key>
+      <PropertyRef Name="clavecct" />
+    </Key>
+    <Property Name="clavecct" Type="String" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="latitud2" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="longitud2" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nombrect" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lada" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="telefono1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SistemaBandaEdoOaxaca.Direccion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LISTA DE DIRECCIONES</h2>
+
+<p>
+    @Html.ActionLink("Crear Nueva Direccion", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.calle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.colonia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entidadFederativa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codigoPostal)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.calle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.colonia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entidadFederativa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigoPostal)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idDireccion }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.idDireccion }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.idDireccion })
+        </td>
+    </tr>
+}
+
+</table>
